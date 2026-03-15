@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="icon" type="image/png" href="assets/images/logo-uwp.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UWP Fun Run 2026 - Growth And Go, Chase Your Potention</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/images/logo-uwp.png" alt="UWP Fun Run Logo" class="nav-logo-img">
+                <span>UWP FUN RUN</span>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#race-info" class="nav-link">Race Information</a></li>
+                <li><a href="#regulation" class="nav-link">Regulation</a></li>
+                <li><a href="#registration" class="nav-link">Registration</a></li>
+                <li><a href="#my-race" class="nav-link">My Race</a></li>
+                <li><a href="#results" class="nav-link">Results</a></li>
+                <li><a href="admin.html" class="nav-link admin-link"><i class="fas fa-lock"></i> Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+    
+    <div class="hero-badge">
+        <i class="fas fa-calendar-alt"></i> 5 Juli 2026
+    </div>
+    <h1 class="hero-title">UWP FUN RUN 2026</h1>
+    <p class="hero-subtitle">Growth And Go, Chase Your Potention</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalParticipants">0</span>
+                    <span class="stat-label">Peserta</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5K</span>
+                    <span class="stat-label">Kategori</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Kelas</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#registration" class="btn btn-primary">
+                    <i class="fas fa-user-plus"></i> Daftar Sekarang
+                </a>
+                <a href="#race-info" class="btn btn-secondary">
+                    <i class="fas fa-info-circle"></i> Info Lomba
+                </a>
+            </div>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <label>Hari</label>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <label>Jam</label>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <label>Menit</label>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <label>Detik</label>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Race Information Section -->
+    <section id="race-info" class="section race-info">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">INFORMASI LOMBA</span>
+                    <h2 class="section-title">Race Information</h2>
+                    <p class="section-subtitle">Detail lengkap mengenai kategori dan jadwal lomba 5 Juli 2026</p> 
+            </div>
+
+            <div class="race-categories">
+                <div class="category-card" data-category="10k-competitive">
+                    <div class="category-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>10K Competitive</h3>
+                    <p class="category-distance">10 Kilometer</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Baju Jersey exclusive</li>
+                        <li><i class="fas fa-check"></i> E-sertifikat</li>
+                        <li><i class="fas fa-check"></i> Medali finisher</li>
+                        <li><i class="fas fa-check"></i> Goodie bag</li>
+                        <li><i class="fas fa-check"></i> Race pack</li>
+                        <li><i class="fas fa-check"></i> Asuransi peserta</li>
+                    </ul>
+                    <div class="category-price">Rp 375.000</div>
+                </div>
+
+                <div class="category-card featured" data-category="5k- Run">
+                    <div class="category-badge">POPULER</div>
+                    <div class="category-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>5K FUN RUN</h3>
+                    <p class="category-distance">5 Kilometer</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Baju Jersey exclusive</li>
+                        <li><i class="fas fa-check"></i> E-sertifikat</li>
+                        <li><i class="fas fa-check"></i> Medali finisher</li>
+                        <li><i class="fas fa-check"></i> Race pack</li>
+                        <li><i class="fas fa-check"></i> Asuransi peserta</li>
+                    </ul>
+                    <div class="category-price">Rp 275.000</div>
+                </div>
+
+                <div class="category-card" data-category="Hafl Marathon">
+                    <div class="category-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Hafl Marathon</h3>
+                    <p class="category-distance">24 Kilometer</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Baju Jersey exclusive</li>
+                        <li><i class="fas fa-check"></i> E-sertifikat</li>
+                        <li><i class="fas fa-check"></i> Medali finisher</li>
+                        <li><i class="fas fa-check"></i> Goodie bag</li>
+                        <li><i class="fas fa-check"></i> Race pack</li>
+                        <li><i class="fas fa-check"></i> Asuransi peserta</li>
+                    </ul>
+                    <div class="category-price">Rp 475.000</div>
+                </div>
+            </div>
+
+            <div class="race-schedule">
+                <h3 class="schedule-title"><i class="fas fa-clock"></i> Race Day Schedule</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-time">05:00</div>
+                        <div class="timeline-content">
+                            <h4>Gate Open & Registration</h4>
+                            <p>Pembukaan gate dan pendaftaran ulang peserta</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">05:30</div>
+                        <div class="timeline-content">
+                            <h4>10K Competitive Start</h4>
+                            <p>Start lomba kategori competitive</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">06:00</div>
+                        <div class="timeline-content">
+                            <h4>half Marathon</h4>
+                            <p>Start lomba kategori Half Marathon</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">06:15</div>
+                        <div class="timeline-content">
+                            <h4>5K Fun Run Start</h4>
+                            <p>Start lomba kategori fun run</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">06:30</div>
+                        <div class="timeline-content">
+                            <h4>Awarding Ceremony</h4>
+                            <p>Pembagian hadiah untuk pemenang</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">08:30</div>
+                        <div class="timeline-content">
+                            <h4>doorprize dan hiburan</h4>
+                            <p>Pembagian hadiah untuk peserta dan hiburan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regulation Section -->
+    <section id="regulation" class="section regulation">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">PERATURAN</span>
+                <h2 class="section-title">Race Regulation</h2>
+                <p class="section-subtitle">Ketentuan dan peraturan yang harus dipatuhi peserta</p>
+            </div>
+
+            <div class="regulation-grid">
+                <div class="regulation-card">
+                    <div class="regulation-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Kualifikasi Peserta</h3>
+                    <ul>
+                        <li>Berusia minimal 15 tahun (kategori 5K)</li>
+                        <li>Anak usia 6-14 tahun (kategori Family)</li>
+                        <li>Sehat jasmani dan rohani</li>
+                        <li>Tidak sedang hamil (wanita)</li>
+                        <li>Tidak memiliki riwayat penyakit jantung</li>
+                    </ul>
+                </div>
+
+                <div class="regulation-card">
+                    <div class="regulation-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Atribut Wajib</h3>
+                    <ul>
+                        <li>Race bib (disediakan panitia)</li>
+                        <li>Jersey UWP Fun Run</li>
+                        <li>Sepatu olahraga</li>
+                        <li>Timing chip (kategori competitive)</li>
+                    </ul>
+                </div>
+
+                <div class="regulation-card">
+                    <div class="regulation-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Peraturan Lomba</h3>
+                    <ul>
+                        <li>Dilarang menggunakan kendaraan</li>
+                        <li>Dilarang shortcut atau melanggar rute</li>
+                        <li>Wajib melewati semua check point</li>
+                        <li>Keputusan juri mutlak dan tidak bisa diganggu gugat</li>
+                    </ul>
+                </div>
+
+                <div class="regulation-card">
+                    <div class="regulation-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Larangan</h3>
+                    <ul>
+                        <li>Dilarang membawa senjata tajam</li>
+                        <li>Dilarang membawa minuman beralkohol</li>
+                        <li>Dilarang merusak fasilitas umum</li>
+                        <li>Dilarang melakukan tindakan kriminal</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-note">
+                <i class="fas fa-info-circle"></i>
+                <p>Dengan mendaftar, peserta menyetujui seluruh peraturan yang berlaku dan membebaskan panitia dari tanggung jawab atas kecelakaan yang disebabkan oleh kelalaian peserta sendiri.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="section registration">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">PENDAFTARAN</span>
+                    <h2 class="section-title">Registration Form</h2>
+                    <p class="section-subtitle">Isi formulir di bawah ini untuk mendaftar UWP Fun Run 2026</p>
+            </div>
+
+            <div class="registration-container">
+                <form id="registrationForm" class="registration-form">
+                    <div class="form-section">
+                        <h3><i class="fas fa-user"></i> Data Pribadi</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Nama Lengkap *</label>
+                                <input type="text" id="fullName" name="fullName" required placeholder="Masukkan nama lengkap">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="email@example.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="0812xxxxxxx">
+                            </div>
+                            <div class="form-group">
+                                <label for="birthDate">Tanggal Lahir *</label>
+                                <input type="date" id="birthDate" name="birthDate" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="gender">Jenis Kelamin *</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Pilih Jenis Kelamin</option>
+                                    <option value="male">Laki-laki</option>
+                                    <option value="female">Perempuan</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="identityNumber">NIK/Passport *</label>
+                                <input type="text" id="identityNumber" name="identityNumber" required placeholder="Nomor KTP/Passport">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3><i class="fas fa-running"></i> Kategori Lomba</h3>
+                        <div class="form-group">
+                            <label>Kategori Lomba *</label>
+                            <div class="category-selection">
+                                <label class="category-option">
+                                    <input type="radio" name="category" value="5k-fun" required>
+                                    <div class="option-content">
+                                        <span class="option-title">5K Fun Run</span>
+                                        <span class="option-price">Rp 275.000</span>
+                                    </div>
+                                </label>
+                                <label class="category-option">
+                                    <input type="radio" name="category" value="5k-competitive" required>
+                                    <div class="option-content">
+                                        <span class="option-title">10K Competitive</span>
+                                        <span class="option-price">Rp 375.000</span>
+                                    </div>
+                                </label>
+                                <label class="category-option">
+                                    <input type="radio" name="category" value="family" required>
+                                    <div class="option-content">
+                                        <span class="option-title">Half Marathon (4 orang)</span>
+                                        <span class="option-price">Rp 475.000</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group" id="shirtSizeGroup">
+                            <label for="shirtSize">Ukuran Kaos *</label>
+                            <select id="shirtSize" name="shirtSize" required>
+                                <option value="">Pilih Ukuran</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                            <small class="form-hint">Lihat size chart untuk detail ukuran</small>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3><i class="fas fa-heartbeat"></i> Informasi Kesehatan</h3>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="healthDeclaration" name="healthDeclaration" required>
+                                <span class="checkmark"></span>
+                                Saya menyatakan dalam kondisi sehat dan tidak memiliki riwayat penyakit jantung, asma berat, atau kondisi medis lainnya yang menghalangi saya untuk berpartisipasi dalam aktivitas fisik berat.
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="emergencyContact" name="emergencyContact" required>
+                                <span class="checkmark"></span>
+                                Saya menyetujui bahwa panitia dapat menghubungi kontak darurat yang saya berikan jika terjadi kondisi darurat.
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3><i class="fas fa-shield-alt"></i> Persetujuan</h3>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="termsAgreement" name="termsAgreement" required>
+                                <span class="checkmark"></span>
+                                Saya telah membaca dan menyetujui <a href="#regulation">peraturan lomba</a> serta membebaskan panitia dari tanggung jawab atas kecelakaan yang disebabkan oleh kelalaian saya sendiri.
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-summary">
+                        <div class="summary-row">
+                            <span>Biaya Pendaftaran:</span>
+                            <span id="summaryPrice">Rp 0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Biaya Admin:</span>
+                            <span>Rp 10.000</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total Pembayaran:</span>
+                            <span id="totalPrice">Rp 10.000</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">
+                        <i class="fas fa-paper-plane"></i> Daftar Sekarang
+                    </button>
+                </form>
+
+                <div class="registration-info">
+                    <div class="info-card">
+                        <h4><i class="fas fa-info-circle"></i> Informasi Penting</h4>
+                        <ul>
+                            <li>Pendaftaran ditutup tanggal 05 July 2026</li>
+                            <li>Race pack dapat diambil di venue H-1 acara</li>
+                            <li>Bawa KTP asli saat pengambilan race pack</li>
+                            <li>Tidak ada refund untuk pembatalan</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4><i class="fas fa-tshirt"></i> Size Chart</h4>
+                        <table class="size-chart">
+                            <tr>
+                                <th>Ukuran</th>
+                                <th>Lebar (cm)</th>
+                                <th>Panjang (cm)</th>
+                            </tr>
+                            <tr><td>XS</td><td>46</td><td>64</td></tr>
+                            <tr><td>S</td><td>48</td><td>66</td></tr>
+                            <tr><td>M</td><td>50</td><td>68</td></tr>
+                            <tr><td>L</td><td>52</td><td>70</td></tr>
+                            <tr><td>XL</td><td>54</td><td>72</td></tr>
+                            <tr><td>XXL</td><td>56</td><td>74</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Race Section -->
+    <section id="my-race" class="section my-race">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">STATUS PESERTA</span>
+                <h2 class="section-title">My Race</h2>
+                <p class="section-subtitle">Cek status pendaftaran dan informasi race pack Anda</p>
+            </div>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchBib" placeholder="Masukkan Nomor BIB atau Email...">
+                    <button onclick="searchParticipant()" class="btn btn-search">Cari</button>
+                </div>
+            </div>
+
+            <div id="participantResult" class="participant-result" style="display: none;">
+                <!-- Hasil pencarian akan ditampilkan di sini -->
+            </div>
+
+            <div class="no-result" id="noResult">
+                <i class="fas fa-search"></i>
+                <p>Masukkan nomor BIB atau email untuk melihat detail pendaftaran</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="section results">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">HASIL LOMBA</span>
+                <h2 class="section-title">Live Results</h2>
+                <p class="section-subtitle">Hasil lomba real-time dan klasemen pemenang</p>
+            </div>
+
+            <div class="results-tabs">
+                <button class="tab-btn active" onclick="switchTab('5k-male')">5K Male</button>
+                <button class="tab-btn" onclick="switchTab('5k-female')">5K Female</button>
+                <button class="tab-btn" onclick="switchTab('5k-competitive')">5K Competitive</button>
+                <button class="tab-btn" onclick="switchTab('family')">Family Run</button>
+            </div>
+
+            <div class="results-content">
+                <div id="5k-male" class="tab-content active">
+                    <table class="results-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>BIB</th>
+                                <th>Name</th>
+                                <th>Time</th>
+                                <th>Pace</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultsBody">
+                            <!-- Data akan diisi oleh JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="download-section">
+                <button class="btn btn-outline" onclick="downloadResults()">
+                    <i class="fas fa-download"></i> Download Full Results
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-running"></i> UWP FUN RUN</h3>
+                    <p>Run For Fun, Run For Health, Run For Unity. Event lari tahunan terbesar yang mengajak masyarakat untuk hidup sehat dan aktif.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#race-info">Race Info</a></li>
+                        <li><a href="#regulation">Regulation</a></li>
+                        <li><a href="#registration">Registration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@uwpfunrun.id</p>
+                    <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UWP Fun Run. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal untuk konfirmasi pendaftaran -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h2>Pendaftaran Berhasil!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Terima kasih telah mendaftar UWP Fun Run 2026.</p>
+                <div class="registration-details">
+                    <p><strong>Nomor BIB:</strong> <span id="modalBib">-</span></p>
+                    <p><strong>Nama:</strong> <span id="modalName">-</span></p>
+                    <p><strong>Kategori:</strong> <span id="modalCategory">-</span></p>
+                    <p><strong>Total Bayar:</strong> <span id="modalTotal">-</span></p>
+                </div>
+                <p class="modal-note">Silakan cek email Anda untuk instruksi pembayaran.</p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModal()" class="btn btn-primary">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
