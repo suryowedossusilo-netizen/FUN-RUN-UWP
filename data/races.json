@@ -1,0 +1,33 @@
+{
+    "races": [
+      {
+        "id": "uwp-2024",
+        "name": "UWP Fun Run 2024",
+        "date": "2024-12-15",
+        "location": "Jakarta",
+        "categories": [
+          {
+            "id": "5k-fun",
+            "name": "5K Fun Run",
+            "distance": 5,
+            "price": 150000,
+            "quota": 500
+          },
+          {
+            "id": "5k-competitive",
+            "name": "5K Competitive",
+            "distance": 5,
+            "price": 250000,
+            "quota": 300
+          },
+          {
+            "id": "family",
+            "name": "Family Run",
+            "distance": 3,
+            "price": 400000,
+            "quota": 100
+          }
+        ]
+      }
+    ]
+  }
